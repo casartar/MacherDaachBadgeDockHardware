@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ESP101)(type KiCad)(uri ${KIPRJMOD}/ESP101.pretty)(options "")(descr ""))
+  (lib (name Kurzhubtaster)(type KiCad)(uri ${KIPRJMOD}/Kurzhubtaster.pretty)(options "")(descr ""))
+  (lib (name NodeMCU)(type KiCad)(uri ${KIPRJMOD}/NodeMCU.pretty)(options "")(descr ""))
+)
