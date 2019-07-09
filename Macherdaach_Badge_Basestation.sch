@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR016
 U 1 1 5CE9F50F
-P 9100 4850
-F 0 "#PWR016" H 9100 4700 50  0001 C CNN
-F 1 "+3V3" H 9115 5023 50  0000 C CNN
-F 2 "" H 9100 4850 50  0001 C CNN
-F 3 "" H 9100 4850 50  0001 C CNN
-	1    9100 4850
+P 8050 4750
+F 0 "#PWR016" H 8050 4600 50  0001 C CNN
+F 1 "+3V3" H 8065 4923 50  0000 C CNN
+F 2 "" H 8050 4750 50  0001 C CNN
+F 3 "" H 8050 4750 50  0001 C CNN
+	1    8050 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -56,24 +56,13 @@ NoConn ~ 7800 5000
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5CEAF78D
-P 9500 4850
-F 0 "#FLG0101" H 9500 4925 50  0001 C CNN
-F 1 "PWR_FLAG" H 9500 5024 50  0000 C CNN
-F 2 "" H 9500 4850 50  0001 C CNN
-F 3 "~" H 9500 4850 50  0001 C CNN
-	1    9500 4850
+P 8400 4750
+F 0 "#FLG0101" H 8400 4825 50  0001 C CNN
+F 1 "PWR_FLAG" H 8400 4924 50  0000 C CNN
+F 2 "" H 8400 4750 50  0001 C CNN
+F 3 "~" H 8400 4750 50  0001 C CNN
+	1    8400 4750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push_SPDT SW3
-U 1 1 5CE9E235
-P 8700 5000
-F 0 "SW3" H 8700 5285 50  0000 C CNN
-F 1 "ON_OFF_Switch" H 8700 5194 50  0000 C CNN
-F 2 "ESP101:ESP101" H 8700 5000 50  0001 C CNN
-F 3 "" H 8700 5000 50  0001 C CNN
-	1    8700 5000
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x15_Counter_Clockwise MOD1
@@ -102,10 +91,6 @@ Wire Wire Line
 	6200 2800 6600 2800
 Wire Wire Line
 	6200 2900 6600 2900
-Wire Wire Line
-	6200 3000 6600 3000
-Wire Wire Line
-	6200 3100 6600 3100
 Wire Wire Line
 	6200 3500 6600 3500
 Wire Wire Line
@@ -266,51 +251,20 @@ F 3 "" H 5300 3500 50  0001 C CNN
 	1    5300 3500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x04_Male J1
-U 1 1 5D06CB51
-P 8000 3200
-F 0 "J1" H 7973 3173 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 7973 3082 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 3200 50  0001 C CNN
-F 3 "~" H 8000 3200 50  0001 C CNN
-	1    8000 3200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3300 7800 3300
-Wire Wire Line
-	6200 3200 7800 3200
 Wire Wire Line
 	6200 3400 7300 3400
-Connection ~ 7300 3400
 Wire Wire Line
-	7300 3400 7800 3400
-Wire Wire Line
-	7800 4900 8500 4900
-Wire Wire Line
-	9100 5000 8900 5000
-Wire Wire Line
-	9100 5000 9100 4850
-Wire Wire Line
-	7300 2100 7300 3100
-Wire Wire Line
-	7300 3100 7800 3100
-Wire Wire Line
-	6200 2100 7300 2100
-Text Notes 7650 3100 0    50   ~ 0
-D
-Text Notes 7650 3200 0    50   ~ 0
+	8050 4900 8050 4750
+Text Notes 7650 3000 0    50   ~ 0
 <
-Text Notes 7650 3300 0    50   ~ 0
+Text Notes 7650 3100 0    50   ~ 0
 >
-Text Notes 7650 3400 0    50   ~ 0
+Text Notes 7650 3200 0    50   ~ 0
 -
 Wire Wire Line
-	9100 5000 9500 5000
+	8050 4900 8400 4900
 Wire Wire Line
-	9500 5000 9500 4850
-Connection ~ 9100 5000
+	8400 4900 8400 4750
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5D072A71
@@ -327,11 +281,8 @@ Wire Wire Line
 Wire Wire Line
 	8400 5100 8400 5200
 Connection ~ 8050 5100
-NoConn ~ 8500 5100
 NoConn ~ 7300 5000
 NoConn ~ 7300 4900
-NoConn ~ 6600 3100
-NoConn ~ 6600 3000
 NoConn ~ 6600 2900
 NoConn ~ 6600 2800
 NoConn ~ 6600 2500
@@ -349,8 +300,43 @@ NoConn ~ 5300 2800
 NoConn ~ 5300 2900
 NoConn ~ 5300 3200
 NoConn ~ 5300 3300
-Text Notes 8300 4500 0    50   ~ 0
-Switchs the Badge Off
-Text Notes 7650 2950 0    50   ~ 0
+Wire Wire Line
+	6200 3000 7800 3000
+Wire Wire Line
+	6200 3100 7800 3100
+Wire Wire Line
+	7300 3400 7800 3400
+Wire Wire Line
+	7800 3400 7800 3200
+Connection ~ 7300 3400
+Wire Wire Line
+	6200 3200 6600 3200
+Wire Wire Line
+	6200 3300 6600 3300
+NoConn ~ 6600 3200
+NoConn ~ 6600 3300
+Text Notes 7650 2750 0    50   ~ 0
 Only Tx is necessary\nD can be used to Flash the Badge via the ESP
+Text Notes 7650 2900 0    50   ~ 0
+D
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5D06CB51
+P 8000 3000
+F 0 "J1" H 7973 2973 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7973 2882 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 3000 50  0001 C CNN
+F 3 "~" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2900 7800 2900
+Wire Wire Line
+	7300 2100 7300 2900
+Wire Wire Line
+	6200 2100 7300 2100
+Wire Wire Line
+	7800 4900 8050 4900
+Connection ~ 8050 4900
 $EndSCHEMATC
