@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Macherdaach Badge Basestation"
-Date "2019-05-26"
-Rev "v1.0"
+Date "2019-07-10"
+Rev "v1.1"
 Comp "casartar"
 Comment1 ""
 Comment2 ""
@@ -70,7 +70,7 @@ U 1 1 5D065651
 P 5900 2800
 F 0 "MOD1" H 5950 3717 50  0000 C CNN
 F 1 "NodeMCU" H 5950 3626 50  0000 C CNN
-F 2 "NodeMCU:NodeMCU" H 5900 2800 50  0001 C CNN
+F 2 "NodeMCU:NodeMCU_v0.1" H 5900 2800 50  0001 C CNN
 F 3 "~" H 5900 2800 50  0001 C CNN
 	1    5900 2800
 	1    0    0    -1  
